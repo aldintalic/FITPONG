@@ -44,5 +44,5 @@ steps:
   inputs:
     buildType: 'current'
     downloadType: 'single'
-    artifactName: 'rs1bransa'
-    downloadPath: '$(System.ArtifactsDirectory)'
+    artifactName: 'FIT PONG'
+    downloadPath: 'd:\a\1\a\FIT PONG'
