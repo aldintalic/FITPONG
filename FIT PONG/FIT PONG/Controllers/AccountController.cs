@@ -468,9 +468,8 @@ namespace FIT_PONG.Controllers
 
         private bool LockoutCheck(IdentityUser<int> korisnik)
         {
-            if (korisnik.LockoutEnd == null)
-                return false;
-            if (korisnik.LockoutEnd < DateTime.Now)
+
+            if (korisnik.LockoutEnd == null || korisnik.LockoutEnd != null && korisnik.LockoutEnd < DateTime.Now)
             {
                 if (korisnik.AccessFailedCount < 2)
                 {
